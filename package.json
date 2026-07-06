@@ -1,0 +1,19 @@
+{
+  "scripts": {
+    "tw": "npx tailwind -i resources/tw/style.css -o resources/public/app.css",
+    "watch:css": "npx tailwind -i resources/tw/style.css -o resources/public/app.css -w"
+  },
+  "dependencies": {
+    "@js-joda/core": "5.6.2",
+    "@js-joda/locale_en-us": "4.8.11",
+    "@js-joda/timezone": "2.18.3",
+    "highlight.js": "11.9.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "shadow-cljs": "^2.28.2",
+    "tailwindcss": "^3.4.1"
+  }
+}
