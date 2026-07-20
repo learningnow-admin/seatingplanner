@@ -114,9 +114,13 @@
                     :display "flex"
                     :align-items "center"
                     :justify-content "space-between"}}
-      [:a {:href  (rtfe/href :routes/#frontpage)
-           :style {:text-decoration "none" :display "flex" :align-items "center"}}
-       [:img {:src "favicon.png" :alt "Learning Now" :style {:height "32px"}}]]
+      [:div {:style {:display "flex" :align-items "center" :gap "16px"}}
+       [:a {:href  (rtfe/href :routes/#frontpage)
+            :style {:text-decoration "none" :display "flex" :align-items "center"}}
+        [:img {:src "favicon.png" :alt "Learning Now" :style {:height "32px"}}]]
+       [:a {:href "https://learningnow.com.au/"
+            :style {:color "#6b7280" :font-size "0.85rem" :text-decoration "none"}}
+        "← Learning Now"]]
       [vt/navigation toolbar-items @active-route]]
 
      [show-panel @active-route]
